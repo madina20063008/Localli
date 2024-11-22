@@ -1,0 +1,28 @@
+.get_started{
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        padding: 90px 20px 90px 40px;
+        margin-bottom: 100px;
+        background: #FBFBFB;
+        border-radius: 25px;
+        .parts_pic{
+            margin-top: 30px;
+            max-width: 500px;
+        }
+        .parts_left{
+            button{
+                @include button;
+            }
+            max-width: 500px;
+        }
+    }
+@media screen and (max-width: 950px) {
+        .get_started{
+            flex-wrap: wrap;
+            gap: 0;
+            max-width: 600px;
+            margin: auto;
+        }
+    }

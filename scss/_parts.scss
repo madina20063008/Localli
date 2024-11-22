@@ -1,0 +1,24 @@
+.parts{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    padding-bottom: 100px;
+    .parts_pic{
+        margin-top: 30px;
+        max-width: 600px;
+    }
+    .parts_left{
+        button{
+            @include button;
+        }
+    }
+}
+@media screen and (max-width: 950px) {
+    .parts{
+        flex-wrap: wrap;
+        gap: 0;
+        max-width: 600px;
+        margin: auto;
+    }
+}
